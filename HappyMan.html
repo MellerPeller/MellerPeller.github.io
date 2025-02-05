@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Man</title>
+</head>
+<body>
+
+<h1 style="text-align:center;text-shadow: black;">Happy Man</h1>
+   <br>
+    <svg x="100" y="100" width="250" height="600">
+        <!--Huvudet-->
+        <defs>
+            <linearGradient id="grad1">
+              <stop offset="10%" stop-color="pink" />
+              <stop offset="90%" stop-color="orange" />
+            </linearGradient>
+          </defs>
+        <circle cx="75" cy="75" r="50" stroke="black" stroke-width="10" fill="url(#grad1)"/>
+
+        <!--Kroppen-->
+        <rect x="75" y="130" width="5" height="160" style="fill:rgb(0, 0, 0);stroke-width:7;stroke:rgb(0,0,0)" />
+
+        <!--Armen-->
+        <line x1="75" y1="125" x2="150" y2="200" style="stroke:rgb(0, 0, 0);stroke-width:8" />
+        <line x1="148" y1="202" x2="180" y2="120" style="stroke:rgb(0, 0, 0);stroke-width:8" />
+
+        <!--Benen-->
+        <line x1="80" y1="290" x2="120" y2="460" style="stroke:rgb(0, 0, 0);stroke-width:8" />
+        <line x1="75" y1="290" x2="40" y2="460" style="stroke:rgb(0, 0, 0);stroke-width:8" />
+
+        <line x1="115" y1="460" x2="150" y2="460" style="stroke:rgb(0, 0, 0);stroke-width:8" />
+        <line x1="45" y1="460" x2="5" y2="460" style="stroke:rgb(0, 0, 0);stroke-width:8" />
+    </svg>
+
+
+    
+</body>
+</html>
