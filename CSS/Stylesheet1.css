@@ -1,0 +1,19 @@
+* {
+    color:rgb(0, 180, 0);
+    background-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    
+}
+mark.blue {
+    background-color: blue;
+    color: blue;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    padding: 3px;
+}
+mark.red {
+    background-color: red;
+    color: red;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    padding: 3px;
+}
