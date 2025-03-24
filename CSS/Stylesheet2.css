@@ -1,0 +1,28 @@
+.redpill {
+    background-image: url(/Webbmedia/redpill.jpg);
+    background-repeat: repeat;
+}
+.bluepill {
+    background-image: url(/Webbmedia/bluepill.jpg);
+    background-repeat: repeat;
+}
+
+body {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    padding: 3px;
+    text-align: center;
+}
+
+p {
+    color: white;
+    font-size: 200%;
+    text-transform: capitalize;
+}
+
+h1 {
+    color: black;
+    text-decoration-line: line-through;
+    text-decoration-color: black;
+    text-decoration-style: wavy;
+    letter-spacing: 20px;
+}
