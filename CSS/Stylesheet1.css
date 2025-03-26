@@ -17,8 +17,8 @@ mark.red {
     padding: 3px;
 }
 .greenBorder {
-    border: 2px ridge rgb(5, 180, 5);
-    padding: 3px;
+    border: 2px solid rgb(5, 180, 5);
+    padding: 4px;
     border-radius: 999px;
     margin: 5%;
 }
