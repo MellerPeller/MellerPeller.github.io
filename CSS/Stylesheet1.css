@@ -30,6 +30,11 @@ div {
     box-sizing: border-box;
 }
 pre {
+    display: none;
+}
+
+div:hover pre {
+    display:block;
     color: black;
-    background-color:white;
+    background-color: white;
 }
