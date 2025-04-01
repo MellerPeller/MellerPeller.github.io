@@ -1,0 +1,24 @@
+div {
+    border: 5px solid black;
+    border-radius: 50px;
+    background-color: sandybrown;
+    padding: 0px
+}
+li {
+    border: 2px solid black;
+    border-radius: 999px; 
+    padding: 3px;
+    background-color: blanchedalmond;
+}
+a {
+    color: black;
+    font-weight: bold;
+}
+
+ul, li {
+    display: none;
+}
+
+div:hover ul, li {
+    display: inline;
+}
