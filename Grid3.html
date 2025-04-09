@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-rows: 50px 100px 100px 50px;
+            grid-template-columns: 100px 200px 200px;
+            grid-template-areas: 
+            "Header Header Header"
+            "Sidebar Section1 Section2"
+            "Sidebar Section3 Section4"
+            "Footer Footer Footer";
+        }
+
+        @media screen and (max-width: 767px) {
+            .grid-container {
+                display: grid;
+                grid-template-rows: 50px 100px 100px 100px 100px 50px;
+                grid-template-columns: 200px 400px;
+                grid-template-areas: 
+                "Header Header"
+                "Sidebar Section1"
+                "Sidebar Section2"
+                "Sidebar Section3"
+                "Sidebar Section4"
+                "Footer Footer";
+            }    
+        }
+        @media screen and (max-width: 480px) {
+            .grid-container {
+                display: grid;
+                grid-template-rows: 50px 200px 100px 100px 100px 100px 50px;
+                grid-template-columns: 400px;
+                grid-template-areas: 
+                "Header"
+                "Sidebar"
+                "Section1"
+                "Section2"
+                "Section3"
+                "Section4"
+                "Footer";
+            }    
+            
+        }
+
+        .grid-container>div {
+            margin: 5px;
+        }
+        .Header {
+            background-color: orange;
+            grid-area: Header;
+        }
+        .Sidebar {
+            background-color: red;
+            grid-area: Sidebar;
+        }
+        .Section1 {
+            background-color: aqua;
+            grid-area: Section1;
+        }
+        .Section2 {
+            background-color: aqua;
+            grid-area: Section2;
+        }
+        .Section3 {
+            background-color: aqua;
+            grid-area: Section3;
+        }
+        .Section4 {
+            background-color: aqua;
+            grid-area: Section4;
+        }
+        .Footer {
+            background-color: greenyellow;
+            grid-area: Footer;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="Header">Header</div>
+        <div class="Sidebar">Sidebar</div>
+        <div class="Section1">Section 1</div>
+        <div class="Section2">Section 2</div>
+        <div class="Section3">Section 3</div>
+        <div class="Section4">Section 4</div>
+        <div class="Footer">Footer</div>
+    </div>
+</body>
+</html>
