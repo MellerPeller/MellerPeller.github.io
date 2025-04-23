@@ -1,0 +1,21 @@
+.grid-container div{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-columns: 400px auto 200px;
+    grid-template-areas: 
+    "Header"
+    "Main"
+    "Footer";
+}
+
+.Header {
+    grid-area: Header;
+}
+
+.Main {
+    grid-area: Main;
+}
+
+.Footer {
+    grid-area: Footer;
+}
