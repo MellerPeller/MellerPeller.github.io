@@ -40,7 +40,7 @@
 
 h1 {
     text-align: center;
-    font-family: Archaic, Pixel;
+    font-family: 'Alagard';
 }
 
 .Main {
@@ -52,6 +52,9 @@ h1 {
 }
 
 @font-face {
-    font-family: Archaic, Pixel;
-    src: url(alagard.ttf);
-}
+    font-family: 'Alagard';
+    src: url('Webbshop/custom-fonts/Alagard.woff2') format('woff2'),
+         url('Webbshop/custom-fonts/Alagard.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
