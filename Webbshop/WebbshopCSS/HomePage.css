@@ -37,6 +37,10 @@
 .Header {
     grid-area: Header;
 }
+.header>h1 {
+    text-align: center;
+    
+}
 
 .Main {
     grid-area: Main;
