@@ -8,9 +8,16 @@
     "Footer";
 }
 
-.imgIcon {
+.LogoIcon {
     height: 50px;
     width: 50px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.imgIcon {
+    height: 25px;
+    width: 25px;
     margin: 0px;
     padding: 0px;
 }
@@ -19,7 +26,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     align-content: center;
     border: 2px solid black;
