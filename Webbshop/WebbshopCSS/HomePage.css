@@ -1,18 +1,32 @@
+body {
+    background-color:peru;
+}
+
+
+
 .grid-container{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 200px auto 200px;
+    grid-template-rows: 200px auto 100px;
     grid-template-areas: 
     "Header"
     "Main"
     "Footer";
 }
 
-.LogoIcon {
-    height: 50px;
-    width: 50px;
-    margin: 0px;
-    padding: 0px;
+.introduction {
+    width: 80%;
+    font-family: 'Alagard', sans-serif;
+    background-color: burlywood;
+    text-align: justify;
+    border: 2px solid black;
+    margin: 2px 10% 2px 10%;
+}
+
+a {
+    font-family: 'Alagard', sans-serif;
+    text-decoration: none;
+    color: black;
 }
 
 .imgIcon {
@@ -30,21 +44,31 @@
     align-items: center;
     align-content: center;
     border: 2px solid black;
+    border-radius: 100px;
+    background-color: burlywood;
+    padding: 1px 15px 1px 15px;
 }
-
 
 
 .Header {
     grid-area: Header;
 }
 
-h1 {
+.titleStyling {
     text-align: center;
-    font-family: 'Alagard';
+    font-family: 'Alagard', sans-serif;
+}
+
+.subtleShadow {
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
 .Main {
     grid-area: Main;
+}
+
+.Sidebar {
+    grid-area: Sidebar;
 }
 
 .Footer {
