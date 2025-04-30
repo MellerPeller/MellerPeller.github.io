@@ -77,8 +77,8 @@ a {
 
 @font-face {
     font-family: 'Alagard';
-    src: url('./fonts/Alagard.woff2') format('woff2'),
-         url('./fonts/Alagard.woff') format('woff');
+    src: url('../../fonts/Alagard.woff2') format('woff2'),
+         url('../../fonts/Alagard.woff') format('woff');
     font-weight: normal;
     font-style: normal;
   }
