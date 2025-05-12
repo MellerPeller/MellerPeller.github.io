@@ -1,0 +1,140 @@
+body {
+    background-color:peru;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px auto 100px;
+    grid-template-areas: 
+    "Header"
+    "Main"
+    "Footer";
+}
+
+.flexGrid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:center;
+    margin: auto;  
+}
+
+.product-card {
+    border: 2px solid #000000;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px burlywood;
+    padding: 10px;
+    margin: 5px;
+    width: 250px;
+    background-color: burlywood;
+    text-align: center;
+}
+  
+.product-image {
+    width: 100%;
+    border: 1px solid burlywood;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+  
+.product-price {
+    margin-right: 20px;
+}
+
+.buy-button {
+    background-color: forestgreen;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.lineHeader {
+    font-family: 'alagard', sans-serif;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: burlywood;
+    padding: 10px;
+    margin: 2px 10% 2px 10%;
+    box-shadow: 0px 0px 5px rgb(180, 108, 38);
+} 
+
+.CenteredBox {
+    width: 80%;
+    font-family: 'Alagard', sans-serif;
+    background-color: burlywood;
+    border-radius: 5px;
+    text-align: justify;
+    border: 1px solid black;
+    margin: 2px 10% 2px 10%;
+    padding: 5px;
+    box-shadow: 0px 0px 5px rgb(180, 108, 38);
+}
+
+.footerText {
+    text-align: center;
+}
+
+a {
+    font-family: 'Alagard', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.imgIcon {
+    height: 25px;
+    width: 25px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    align-items: center;
+    align-content: center;
+    border: 2px solid black;
+    border-radius: 100px;
+    background-color: burlywood;
+    padding: 1px 15px 1px 15px;
+}
+
+.inline {
+    display: inline;
+}
+
+.Header {
+    grid-area: Header;
+}
+
+.titleStyling {
+    text-align: center;
+    font-family: 'Alagard', sans-serif;
+}
+
+.subtleShadow {
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.Main {
+    grid-area: Main;
+}
+
+.Sidebar {
+    grid-area: Sidebar;
+}
+
+.Footer {
+    grid-area: Footer;
+}
+
+@font-face {
+    font-family: 'Alagard';
+    src: url('../../fonts/Alagard.woff2') format('woff2'),
+         url('../../fonts/Alagard.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
