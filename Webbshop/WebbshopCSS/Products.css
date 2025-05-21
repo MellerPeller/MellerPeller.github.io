@@ -155,9 +155,22 @@ a {
         padding: 1px 10px 1px 10px;
         font-size: small;
     }
+
+    .product-card {
+        border: 2px solid #000000;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px burlywood;
+        padding: 10px;
+        margin: 5px;
+        width: 83px;
+        background-color: burlywood;
+        text-align: center;
+        font-size: x-small;
+    }
+
     .footerText {
         text-align: center;
-        font-size: small;
+        font-size: x-small;
     }
 
     .imgIcon {
