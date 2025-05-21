@@ -4,7 +4,7 @@ body {
 
 .grid-container{
     display: grid;
-    grid-template-columns: 100vb;
+    grid-template-columns: 1fr;
     grid-template-rows: 200px auto 100px;
     grid-template-areas: 
     "Header"
@@ -142,6 +142,9 @@ a {
         border-radius: 100px;
         background-color: burlywood;
         padding: 1px 10px 1px 10px;
+        font-size: small;
+    }
+    .footerText {
         font-size: small;
     }
 
