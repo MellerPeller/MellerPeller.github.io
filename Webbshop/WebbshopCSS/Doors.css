@@ -130,6 +130,7 @@ a {
 
 .Main {
     grid-area: Main;
+    font-family: 'Alagard', sans-serif;
 }
 
 .Sidebar {
@@ -146,6 +147,17 @@ a {
 
 @media screen and (max-width: 480px) {
 
+    .grid-container{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 200px auto auto 100px;
+        grid-template-areas: 
+        "Header"
+        "Main"
+        "Sidebar"
+        "Footer";
+    }
+
     .navigation {
         display: flex;
         flex-direction: row;
@@ -157,7 +169,20 @@ a {
         border-radius: 100px;
         background-color: burlywood;
         padding: 1px 10px 1px 10px;
-        font-size: small;
+        font-size: medium;
+    }
+
+    .Sidebar p {
+        width: 80%;
+        font-family: 'Alagard', sans-serif;
+        background-color: burlywood;
+        border-radius: 5px;
+        text-align: justify;
+        border: 1px solid black;
+        margin: 25% 10% 25% 10%;
+        padding: 5px;
+        box-shadow: 0px 0px 5px rgb(180, 108, 38);
+        font-size: medium;
     }
 
     .product-card {
@@ -165,8 +190,8 @@ a {
         border-radius: 8px;
         box-shadow: 0 2px 5px burlywood;
         padding: 10px;
-        margin: 5px;
-        width: 83px;
+        margin: 5px 10% 5px 10%;
+        width: 80%;
         background-color: burlywood;
         text-align: center;
     }
