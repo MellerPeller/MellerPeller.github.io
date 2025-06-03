@@ -1,15 +1,23 @@
+@font-face {
+    font-family: 'Alagard';
+    src: url('../../fonts/Alagard.woff2') format('woff2'),
+         url('../../fonts/Alagard.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 body {
     background-color:peru;
 }
 
 .grid-container{
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 200px auto 100px;
     grid-template-areas: 
-    "Header"
-    "Main"
-    "Footer";
+    "Header Header"
+    "Main Sidebar"
+    "Footer Footer";
 }
 
 .flexGrid {
@@ -142,6 +150,17 @@ a {
 
 @media screen and (max-width: 480px) {
 
+    .grid-container{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 200px auto auto 100px;
+        grid-template-areas: 
+        "Header"
+        "Main"
+        "Sidebar"
+        "Footer";
+    }
+
     .navigation {
         display: flex;
         flex-direction: row;
@@ -180,13 +199,4 @@ a {
         padding: 0px;
     }
 }
-    
 
-
-@font-face {
-    font-family: 'Alagard';
-    src: url('../../fonts/Alagard.woff2') format('woff2'),
-         url('../../fonts/Alagard.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
