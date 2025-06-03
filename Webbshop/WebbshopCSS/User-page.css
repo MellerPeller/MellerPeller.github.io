@@ -92,9 +92,23 @@ a {
 
 .Footer {
     grid-area: Footer;
+    border: 2px solid black;
+    border-radius: 99px;
+    background-color: white;
+    font-size: small;
 }
 
 @media screen and (max-width: 480px) {
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+        grid-template-rows: 200px auto 100px;
+        grid-template-areas: 
+        "Sidebar Header none"
+        "Sidebar Main none"
+        "Sidebar Footer none";
+    }
 
     .navigation {
         display: flex;
@@ -107,13 +121,13 @@ a {
         background-color: burlywood;
         padding: 0;
         height: 100%;
-        width: 50%;
+        width: 75%;
         font-size: small;
     }
-    
+
     .footerText {
         text-align: center;
-        font-size: small;
+        font-size: xx-small;
     }
 
     .imgIcon {
